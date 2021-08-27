@@ -1,0 +1,90 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    background-color: antiquewhite;
+    
+}
+
+#main {
+
+}
+#header {
+    display: block;
+    background-color: #000;
+    height: 46px;
+    width: 100%;
+    
+}
+
+#nav {    
+    
+    display: inline-block;
+    
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#nav > li > a {
+    
+    color: #fff;
+    
+}
+
+#nav li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    height: 46px;
+    margin-left: 0px;
+}
+
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li:hover .sub-nav {
+    
+}
+
+#nav .sub-nav {
+   position: absolute;
+   background-color: #fff;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 12px 24px;
+    height: 46px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+} 
+
+#header .search-icon {
+    color: #fff;
+    font-size: 16px;
+}
+
+#slider {
+    min-height: 500px;
+    background-color: rgb(75, 173, 160);
+}
+#content {
+
+}
+#footer {
+
+}
