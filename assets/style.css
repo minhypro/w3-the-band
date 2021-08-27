@@ -16,7 +16,7 @@ html {
 
 }
 #header {
-    display: block;
+    display: flex;
     background-color: #000;
     height: 46px;
     width: 100%;
@@ -24,8 +24,7 @@ html {
 }
 
 #nav {    
-    
-    display: inline-block;
+    display: flex;
     
 }
 
@@ -64,7 +63,6 @@ html {
 }
 
 #header .search-btn {
-    float: right;
     padding: 12px 24px;
     height: 46px;
 }
