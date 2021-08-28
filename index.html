@@ -1,48 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/1c3fdb0a75.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+
 <body>
     <div id="main">
         <header id="header">
-            <!-- Begin:nav -->
+            <!-- Header -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">More <i class="fas fa-caret-down"></i></a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">More <i class="fas fa-caret-down"></i></a>
                     <ul class="sub-nav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
-            <!-- End:nav -->
-            <div class="search-btn" >
+            <div class="search-btn">
                 <i class="fas fa-search search-icon"></i>
             </div>
         </header>
-
-        <div id="slider">
+        <!-- Body -->
+        <div class="body">
+            <!-- Slider -->
+            <div id="slider">
+                <div class="slider-fig">
+                    <h3>New York</h3>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+            <!-- Content -->
+            <div id="content">
+                <!-- The Band -->
+                <div id="band" class="content-container">
+                    <h2 class="heading">The Band</h2>
+                    <p class="sub-heading">We love music</p>
+                    <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id
+                        est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
+                    <div class="team">
+                        <div class="member">
+                            <p>Name</p>
+                            <img src="/assets/img/bandmember.jpg" alt="">
+                        </div>
+                        <div class="member">
+                            <p>Name</p>
+                            <img src="/assets/img/bandmember.jpg" alt="">
+                        </div>
+                        <div class="member">
+                            <p>Name</p>
+                            <img src="/assets/img/bandmember.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour -->
+                <div id="tour-container">
+                    <div id="tour" class="content-container">
+                        <h2 class="heading">Tour Dates</h2>
+                        <p class="sub-heading">Remember to book your tickets!</p>
+                        <div class="months">
+                            <ul>
+                                <li>September <span class="sold-out">Sold out</span></li>
+                                <li>October <span class="sold-out">Sold out</span></li>
+                                <li>November <span class="available">3</span></li>
+                            </ul>
+                        </div>
+                        <div class="place-list">
+                            <div class="place-items">
+                                <img src="/assets/img/newyork.jpg" class="place-img" alt="">
+                                <div class="place-info">
+                                    <p><b>New York</b></p>
+                                    <p class="text-gray">Sat 28 Nov 2016</p>
+                                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <button class="buy-ticket-btn">Buy Tickets</button>
+                                </div>
+                            </div>
+                            <div class="place-items">
+                                <img src="/assets/img/paris.jpg" class="place-img" alt="">
+                                <div class="place-info">
+                                    <p><b>Paris</b></p>
+                                    <p class="text-gray">Fri 27 Nov 2016</p>
+                                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <button class="buy-ticket-btn">Buy Tickets</button>
+                                </div>
+                            </div>
+                            <div class="place-items">
+                                <img src="/assets/img/sanfran.jpg" class="place-img" alt="">
+                                <div class="place-info">
+                                    <p><b>San Francisco</b></p>
+                                    <p class="text-gray">Sun 29 Nov 2016</p>
+                                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <button class="buy-ticket-btn">Buy Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div id="contact" class="content-container">
+                    <h2 class="heading">Contact</h2>
+                    <p class="sub-heading">Fan? Drop a note!</p>
+                    <div class="contact-container">
+                        <div class="left">
+                            <i class="fa fa-map-marker"></i>Chicago, US<br>
+                            <i class="fa fa-phone"></i>Phone: +00 151515<br>
+                            <i class="fa fa-envelope"></i>Email: mail@mail.com
+                        </div>
+                        <div class="right">
+                            <input type="text" class="contact-input" placeholder="Name">
+                            <input type="text" class="contact-input" placeholder="Email">
+                            <input type="text" class="contact-input" placeholder="Message"><br>
+                            <button class="buy-ticket-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-
-        <div id="content">
-            
-        </div>
-
         <div id="footer">
 
         </div>
     </div>
 </body>
+
 </html>
