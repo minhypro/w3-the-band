@@ -1,6 +1,6 @@
 const buyTicketBtns = document.querySelectorAll('.buy-ticket-btn')
 const popUp = document.querySelector('.modal')
-// const modalContainer = document.querySelector('.modal-container')
+const modalContainer = document.querySelector('.modal-container')
 const closeBtn1 = document.querySelector('.close-modal')
 const closeBtn2 = document.querySelector('.close-btn')
 
@@ -11,6 +11,11 @@ buyTicketBtns.forEach(btn => {
 let Btns = [closeBtn1,closeBtn2];
 [closeBtn1,closeBtn2].forEach(btn => {
     btn.addEventListener('click',closePopUp)
+})
+
+popUp.addEventListener('click', closePopUp)
+modalContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
 })
 
 function openPopUp() {
