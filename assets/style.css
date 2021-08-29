@@ -98,11 +98,13 @@ html {
 
 .menu-btn {
     display: none;
+    -webkit-appearance: none;
 }
 
 .search-btn {
     padding: 12px 23px;
     height: 46px;
+    -webkit-appearance: none;
 }
 
 .search-btn:hover {
@@ -300,6 +302,7 @@ html {
     background-color: #000;
     color: #fff;
     border-style: none;
+    -webkit-appearance: none;
 }
 
 .buy-ticket-btn:hover {
@@ -344,6 +347,7 @@ input[type='submit'] {
     padding: 8px 16px;
     background-color: #000;
     color: #fff;
+    -webkit-appearance: none;
 }
 
 input[type='submit']:hover {
