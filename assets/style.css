@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
     font-family: "Lato", sans-serif;
     background-color: #fff;
@@ -355,14 +359,16 @@ input[type='submit']:hover {
     align-items: center;
     padding: auto;
     justify-content: center;
+    flex-direction: column;
 }
 
-#footer i {
+#footer a {
     font-size: 36px;
     margin: 5px;
+    color: #757575;
 }
 
-#footer i:hover {
+#footer a:hover {
     color: #b1b1b1;
 }
 
