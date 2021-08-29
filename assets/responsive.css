@@ -77,6 +77,12 @@
         width: 100%;
     }
 
+    .place-info {
+        display: block;
+        padding-top: 2px;
+        background-color: #fff;
+    }
+
     .contact-container {
         flex-direction: column;
     }
