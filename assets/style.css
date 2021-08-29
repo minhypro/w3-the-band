@@ -31,6 +31,7 @@ html {
     justify-content: space-between;
     top: 0;
     z-index: 1;
+   
 }
 
 #nav {    
@@ -39,9 +40,8 @@ html {
 }
 
 #nav li {
-    display: inline-block;
+    display: block;
     position: relative;
-    
 }
 
 #nav a:focus-visible,
@@ -80,10 +80,10 @@ html {
 }
 
 #nav .sub-nav {
-   position: absolute;
-   background-color: #fff;
-   display: none;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #nav .sub-nav li a {
@@ -91,17 +91,21 @@ html {
     color: #000;
 }
 
-#header .search-btn {
+.menu-btn {
+    display: none;
+}
+
+.search-btn {
     padding: 12px 23px;
     height: 46px;
 }
 
-#header .search-btn:hover {
+.search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 } 
 
-#header .search-icon {
+.search-icon {
     color: #fff;
     font-size: 16px;
 }

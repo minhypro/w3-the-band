@@ -27,3 +27,32 @@ function closePopUp() {
     popUp.classList.remove('open')
     // modalContainer.classList.remove('open')
 }
+
+//Mobile
+const header = document.getElementById('header')
+const mobileMenu = document.getElementById('mobile-menu')
+const headerHeight = header.clientHeight
+
+mobileMenu.onclick = function () {
+    var isClose = header.clientHeight === headerHeight
+    if (isClose) {
+        header.style.height = 'auto'
+    } else {
+        header.style.height = null
+    }
+}
+
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+menuItems.forEach(menuItem => {
+    let isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('sub-nav')
+    
+    menuItem.onclick = function (event) {
+        if (isParentMenu) {
+            event.preventDefault()
+        } else {
+            header.style.height = null
+        }
+    }
+
+
+})
