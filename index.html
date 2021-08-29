@@ -43,7 +43,7 @@
                     <p>The Golden Brigde in Da Nang city.</p>
                 </div>
             </div>
-            <!-- Content -->
+            <!-- Begin: Content -->
             <div id="content">
                 <!-- The Band -->
                 <div id="band" class="content-container">
@@ -130,19 +130,43 @@
                             <i class="fa fa-envelope"></i>Email: mail@mail.com
                         </div>
                         <div class="right">
-                            <input type="text" class="contact-input" placeholder="Name">
-                            <input type="text" class="contact-input" placeholder="Email">
-                            <input type="text" class="contact-input" placeholder="Message"><br>
-                            <button class="buy-ticket-btn">Submit</button>
+                            <form action="">
+                                <div style="display: flex; justify-content: space-around;">
+                                    <div>
+                                        <input required class="half" type="text" placeholder="Name">
+                                    </div>
+                                    <div>
+                                        <input required class="half" type="text" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input required class="full" type="text" placeholder="Message">
+                                    </div>
+                                </div>
+                                <input type="submit" value="SEND">
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End: Content -->
 
         </div>
-        <div id="footer">
-
+        <!-- End: Body -->
+        <div class="map">
+            <img src="./assets/img/map.jpg" alt="Map">
         </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <p>Powered by Minh Y with the consultant of W3 & F8</p>
+            </div>
+        </footer>
     </div>
 
     <div class="modal">
@@ -166,9 +190,9 @@
                 <button class="modal-btn">Pay <i class="fas fa-check"></i></button>
                 <p>Need <a href="#">help?</a></p>
                 <button class="close-btn">Close <i class="fas fa-times"></i></button>
-                
+
             </div>
-            
+
         </div>
     </div>
 

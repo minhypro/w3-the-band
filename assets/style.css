@@ -103,6 +103,7 @@ html {
 }
 
 .body {
+    margin: auto;
     max-width: 2000px;
 }
 
@@ -136,7 +137,7 @@ html {
 .slider-fig p {
     margin: 15px 0 30px 0;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #content {
@@ -317,13 +318,56 @@ html {
     width: 50%;
 }
 
-.contact-input {
-    height: 40px;
-    max-width: 180px;
+#contact .right input{
+    
+    padding: 10px 20px;
+    margin: 5px;
+    width: 100%;
+    border: 1px #757575 solid ;
+}
+
+input[type='submit'] {
+    margin: 0 0 16px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+input[type='submit']:hover {
+    border: none;
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+    border-style: none!important;
+}
+
+.map img {
+    width: 100%;
 }
 
 #footer {
+    display: flex;
+    margin: auto;
+    min-height: 216px;
+    text-align: center;
+    color: #757575;
+    font-size: 16px;
+    align-items: center;
+    padding: auto;
+    justify-content: center;
+}
 
+#footer i {
+    font-size: 36px;
+    margin: 5px;
+}
+
+#footer i:hover {
+    color: #b1b1b1;
+}
+
+#footer p {
+    margin: 20px;
 }
 
 .modal.open {
