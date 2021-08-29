@@ -32,6 +32,7 @@ function closePopUp() {
 const header = document.getElementById('header')
 const mobileMenu = document.getElementById('mobile-menu')
 const headerHeight = header.clientHeight
+const subNav = document.querySelector('.sub-nav')
 
 mobileMenu.onclick = function () {
     var isClose = header.clientHeight === headerHeight
@@ -49,10 +50,20 @@ menuItems.forEach(menuItem => {
     menuItem.onclick = function (event) {
         if (isParentMenu) {
             event.preventDefault()
+            
         } else {
             header.style.height = null
         }
     }
+})
 
+const subDropdown = document.getElementById('js-drop-down')
+const up = document.getElementById('up')
+const down = document.getElementById('down')
+var isActive = document.querySelector('.active')
 
+subDropdown.addEventListener('click', () => {
+    subNav.classList.toggle('active')
+    up.classList.toggle('show')
+    down.classList.toggle('hide')
 })
